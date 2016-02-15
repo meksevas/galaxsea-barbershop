@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп: Магазин</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
-        <nav class="top-menu">
+        <div class="logo-header">
+          <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+        </div>
+        <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -23,7 +25,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -48,7 +50,7 @@
           <a href="#">Магазин</a>
           </li>
           <li>
-            <a href="#">Средства для ухода</a>
+            <span>Средства для ухода</span>
           </li>
         </ul>
       </div>
@@ -56,17 +58,17 @@
         <form action="#" method="get" name="filters">
           <fieldset class="filters-brands">
             <legend class="filters-title">Производители:</legend>
-            <input type="checkbox" name="checkbox-baxter" id="baxter"><label for="baxter">Baxter of California</label><br>
+            <input type="checkbox" name="checkbox-baxter" id="baxter" checked><label for="baxter">Baxter of California</label><br>
             <input type="checkbox" name="checkbox-mrnatty" id="mrnatty"><label for="mrnatty">Mr Natty</label><br>
-            <input type="checkbox" name="checkbox-suavecito" id="suavecito"><label for="suavecito">Suavecito</label><br>
+            <input type="checkbox" name="checkbox-suavecito" id="suavecito" checked><label for="suavecito">Suavecito</label><br>
             <input type="checkbox" name="checkbox-malingoetz" id="malingoetz"><label for="malingoetz">Malin+Goetz</label><br>
             <input type="checkbox" name="checkbox-murrays" id="murrays"><label for="murrays">Murray's</label><br>
-            <input type="checkbox" name="checkbox-americancrew" id="americancrew"><label for="americancrew">American Crew</label>
+            <input type="checkbox" name="checkbox-americancrew" id="americancrew" checked><label for="americancrew">American Crew</label>
           </fieldset>
           <fieldset class="filters-groups">
             <legend class="filters-title">Группы товаров:</legend>
             <input type="radio" name="filters-groups" id="shaving"><label for="shaving">Бритвенные принадлежности</label><br>
-            <input type="radio" name="filters-groups" id="caregoods"><label for="caregoods">Средства для ухода</label><br>
+            <input type="radio" name="filters-groups" id="caregoods" checked><label for="caregoods">Средства для ухода</label><br>
             <input type="radio" name="filters-groups" id="accessories"><label for="accessories">Аксессуары</label>
           </fieldset>
           <button type="submit" name="filters-show" class="btn">Показать</button>
@@ -80,7 +82,7 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Набор для путешествий</span><br><span class="brands">«BAXTER OF CALIFORNIA»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>2 900 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
@@ -92,7 +94,7 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Увлажняющий кондиционер</span><br><span class="brands">«BAXTER OF CALIFORNIA»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>750 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
@@ -104,7 +106,7 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Гель для волос</span><br><span class="brands">«SUAVECITO»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>290 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
@@ -116,7 +118,7 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Глина для укладки волос</span><br><span class="brands">«AMERICAN CREW»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>500 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
@@ -128,7 +130,7 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Гель для волос</span><br><span class="brands">«AMERICAN CREW»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>300 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
@@ -140,14 +142,14 @@
           <div class="goods-name">
             <a href="#"><span class="groups">Набор для бритья</span><br><span class="brands">«BAXTER OF CALIFORNIA»</span></a>
           </div>
-          <div class="goods-buy">
+          <div class="goods-buy clearfix">
             <span>3 900 руб.</span>
             <a class="btn" href="#">Купить</a>
           </div>
         </article>
         <ul class="pages">
           <li><a class="btn" href="#">1</a></li>
-          <li><a class="btn" href="#">2</a></li>
+          <li><a class="btn active" href="#">2</a></li>
           <li><a class="btn" href="#">3</a></li>
           <li><a class="btn" href="#">4</a></li>
         </ul>

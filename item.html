@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп: Набор для путешествий «Baxter of California»</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
-        <nav class="top-menu">
+        <div class="logo-header">
+          <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+        </div>
+        <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -23,7 +25,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="#">Магазин</a>
+              <a class="active" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -51,7 +53,7 @@
             <a href="#">Средства для ухода</a>
           </li>
           <li>
-            <a href="#">Набор для путешествий «Baxter of California»</a>
+            <span>Набор для путешествий «Baxter of California»</span>
           </li>
         </ul>
       </div>
@@ -67,13 +69,13 @@
       </section>
       <div class="item-information">
         <seсtion class="item-description">
-          <div class="item-presence">
+          <div class="item-presence clearfix">
             <span>Есть в наличии</span>
             <span>Артикул: dexter-ae</span>
           </div>
           <p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за   кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также   может стать отличным подарком.</p>
         </seсtion>
-        <div class="goods-buy">
+        <div class="goods-buy clearfix">
           <span>2 900 руб.</span>
           <a class="btn" href="#">Купить</a>
         </div>
@@ -89,7 +91,7 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
       <div class="container">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>

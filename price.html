@@ -3,16 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Барбершоп: Прайс-лист</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <div class="container clearfix">
-        <nav class="top-menu">
+        <div class="logo-header">
+          <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
+        </div>
+        <nav class="main-navigation">
           <ul>
-            <li>
-              <a href="#"><img src="img/barbershop-index/logo-header.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
-            </li>
             <li>
               <a href="#">Информация</a>
             </li>
@@ -20,7 +22,7 @@
             <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#">Прайс-лист</a>
+              <a class="active" href="#">Прайс-лист</a>
             </li>
             <li>
               <a href="#">Магазин</a>
@@ -45,12 +47,12 @@
             <a href="#">Главная</a>
           </li>
           <li>
-            <a href="#">Прайс-лист</a>
+            <span>Прайс-лист</span>
           </li>
         </ul>
       </div>
       <div class="page-big-title">
-        <b>Истинно мужская классика</b>
+        <b><span>Истинно мужская классика</span></b>
       </div>
       <div class="service clearfix">
         <section class="products">
@@ -91,7 +93,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
