@@ -656,13 +656,13 @@ input[type="radio"]:checked + label::after {
 
 .item-details ul {
   padding: 0;
-  
+
   list-style: none;
 }
 
 .item-details li {
   position: relative;
-  
+
   margin-bottom: 5px;
   padding-left: 20px;
 }
@@ -686,14 +686,51 @@ input[type="radio"]:checked + label::after {
 
 .page-big-title {
   position: relative;
-  
+
   width: 900px;
   margin: 0 auto;
   margin-bottom: 60px;
-  
+
   font-size: 48px;
   line-height: 55px;
   text-align: center;
+}
+
+.line {
+  position: relative;
+  overflow: hidden;
+
+  display: block;
+
+  z-index: 1;
+}
+
+.line::before,
+.line::after {
+  content: "";
+
+  position: relative;
+  top: 6px;
+  left: 0;
+
+  display: inline-block;
+  width: 240px;
+  height: 2px;
+
+  vertical-align: middle;
+
+  background: #000000;
+
+  z-index: -1;
+}
+
+.line::before {
+  left: -25px;
+  margin: -20px 0 0 -100%;
+}
+.line::after {
+  left: 25px;
+  margin: -20px -100% 0 0;
 }
 
 .products {
@@ -703,13 +740,13 @@ input[type="radio"]:checked + label::after {
 
 .products ul {
   padding: 0;
-  
+
   list-style: none;
 }
 
 .products li {
   position: relative;
-  
+
   margin-bottom: 10px;
   padding-left: 20px;
 }
@@ -741,7 +778,7 @@ input[type="radio"]:checked + label::after {
 .price-table td {
   width: 230px;
   padding: 15px;
-  
+
   border: 2px solid #000000;
 }
 
@@ -866,14 +903,4 @@ input[type="radio"]:checked + label::after {
   color: #000000;
 
   background-color: #ffffff;
-}
-
-/* H1-H6 */
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 24px;
 }
