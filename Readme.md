@@ -1,6 +1,6 @@
 # Учебный проект «Барбершоп»
 
-* Студент: [Виктория Горобко](https://htmlacademy.ru/profile/id173489).
+* Студент: [Павел Шарко](https://htmlacademy.ru/profile/id173489).
 
 ---
 
